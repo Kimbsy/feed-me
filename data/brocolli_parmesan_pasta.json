@@ -1,0 +1,17 @@
+{
+    "name": "Brocoli and Parmesan Pasta",
+    "ingredients": [
+        {
+            "name": "pasta",
+            "quantity": "enough"
+        },
+        {
+            "name": "tenderstem brocolli",
+            "quantity": "large handful"
+        },
+        {
+            "name": "parmesan",
+            "quantity": "1 buttload"
+        }
+    ]
+}

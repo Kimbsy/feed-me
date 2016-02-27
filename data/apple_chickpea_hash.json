@@ -1,0 +1,25 @@
+{
+    "name": "Apple and Chickpea Hash",
+    "ingredients": [
+        {
+            "name": "onion",
+            "quantity": "1 large"
+        },
+        {
+            "name": "apple",
+            "quantity": "2 small"
+        },
+        {
+            "name": "chickpeas",
+            "quantity": "1 can"
+        },
+        {
+            "name": "maple syrup",
+            "quantity": "1 tablespoon"
+        },
+        {
+            "name": "kale",
+            "quantity": "1 handful"
+        }
+    ]
+}
