@@ -1,0 +1,61 @@
+{
+    "name": "Sausage and Spring Mash Pie",
+    "ingredients": [
+        {
+            "name": "potatoes",
+            "quantity": "1.5 kg"
+        },
+        {
+            "name": "savoy cabbage",
+            "quantity": "1/4 to 1/2"
+        },
+        {
+            "name": "milk",
+            "quantity": "100ml"
+        },
+        {
+            "name": "butter",
+            "quantity": "50g"
+        },
+        {
+            "name": "dijon/wholegrain mustard",
+            "quantity": "1 tsp"
+        },
+        {
+            "name": "vegetable oil",
+            "quantity": "2 tsp"
+        },
+        {
+            "name": "pork sausages",
+            "quantity": "16"
+        },
+        {
+            "name": "shallots",
+            "quantity": "10"
+        },
+        {
+            "name": "carrots",
+            "quantity": "4"
+        },
+        {
+            "name": "thyme",
+            "quantity": "2-3 sprigs"
+        },
+        {
+            "name": "mushrooms",
+            "quantity": "500g"
+        },
+        {
+            "name": "red wine",
+            "quantity": "400ml"
+        },
+        {
+            "name": "beef stock",
+            "quantity": "300ml"
+        },
+        {
+            "name": "caramelised red onion",
+            "quantity": "2 tbsp"
+        }
+    ]
+}

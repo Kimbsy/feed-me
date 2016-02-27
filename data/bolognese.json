@@ -1,0 +1,85 @@
+{
+    "name": "World's Greatest Bolognese",
+    "ingredients": [
+        {
+            "name": "beef mince",
+            "quantity": "500g"
+        },
+        {
+            "name": "spaghetti",
+            "quantity": "400g"
+        },
+        {
+            "name": "smokey streaky bacon",
+            "quantity": "4 rashers"
+        },
+        {
+            "name": "plum/chopped tomatoes",
+            "quantity": "2 tins"
+        },
+        {
+            "name": "cherry tomatoes",
+            "quantity": "6"
+        },
+        {
+            "name": "celery",
+            "quantity": "2 sticks"
+        },
+        {
+            "name": "carrots",
+            "quantity": "2"
+        },
+        {
+            "name": "garlic",
+            "quantity": "2 cloves"
+        },
+        {
+            "name": "chilli",
+            "quantity": "1 medium"
+        },
+        {
+            "name": "parmesan",
+            "quantity": "75g"
+        },
+        {
+            "name": "tomato puree",
+            "quantity": "2 tbsp"
+        },
+        {
+            "name": "beef stock cube",
+            "quantity": "1"
+        },
+        {
+            "name": "red wine",
+            "quantity": "1 glass"
+        },
+        {
+            "name": "rosemary",
+            "quantity": "2-3 sprigs"
+        },
+        {
+            "name": "basil",
+            "quantity": "1 handful"
+        },
+        {
+            "name": "oregano",
+            "quantity": "1 tsp"
+        },
+        {
+            "name": "bay leaves",
+            "quantity": "1-2"
+        },
+        {
+            "name": "olivo oil",
+            "quantity": "some"
+        },
+        {
+            "name": "salt and pepper",
+            "quantity": "enough"
+        },
+        {
+            "name": "crusty bread",
+            "quantity": "some"
+        }
+    ]
+}

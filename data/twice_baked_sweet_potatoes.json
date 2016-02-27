@@ -1,0 +1,37 @@
+{
+    "name": "Twice Baked Sweet Potatoes",
+    "ingredients": [
+        {
+            "name": "sweet potatoes",
+            "quantity": "2"
+        },
+        {
+            "name": "onion",
+            "quantity": "1 medium"
+        },
+        {
+            "name": "kale",
+            "quantity": "1 bunch"
+        },
+        {
+            "name": "greek yoghurt",
+            "quantity": "1 dollop"
+        },
+        {
+            "name": "olive oil",
+            "quantity": "a little"
+        },
+        {
+            "name": "cannellini beans",
+            "quantity": "1/2 cup"
+        },
+        {
+            "name": "garlic powder",
+            "quantity": "some"
+        },
+        {
+            "name": "salt and pepper",
+            "quantity": "enough"
+        }
+    ]
+}

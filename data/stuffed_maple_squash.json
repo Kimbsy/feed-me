@@ -1,0 +1,37 @@
+{
+    "name": "Stuffed Maple Squash",
+    "ingredients": [
+        {
+            "name": "acorn squash",
+            "quantity": "1"
+        },
+        {
+            "name": "olive oil",
+            "quantity": "2 tbsp"
+        },
+        {
+            "name": "maple syrup",
+            "quantity": "2 tbsp"
+        },
+        {
+            "name": "rice",
+            "quantity": "1/2 cup"
+        },
+        {
+            "name": "almonds",
+            "quantity": "14 cup"
+        },
+        {
+            "name": "mushrooms",
+            "quantity": "1/4 cup"
+        },
+        {
+            "name": "kale",
+            "quantity": "2 leaves"
+        },
+        {
+            "name": "salt and pepper",
+            "quantity": "enough"
+        }
+    ]
+}

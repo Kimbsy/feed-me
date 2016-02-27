@@ -1,0 +1,45 @@
+{
+    "name": "Hake with Beans and Greens",
+    "ingredients": [
+        {
+            "name": "olive oil",
+            "quantity": "some"
+        },
+        {
+            "name": "raw cooking chorizo",
+            "quantity": "100g pack"
+        },
+        {
+            "name": "onion",
+            "quantity": "1"
+        },
+        {
+            "name": "spinach",
+            "quantity": "260g bag"
+        },
+        {
+            "name": "skinless hake fillets",
+            "quantity": "2 x 140g"
+        },
+        {
+            "name": "sweet smoked paprika",
+            "quantity": "2 tsp"
+        },
+        {
+            "name": "red chilli",
+            "quantity": "1"
+        },
+        {
+            "name": "cannellini beans",
+            "quantity": "400g can"
+        },
+        {
+            "name": "lemon juice",
+            "quantity": "1/2"
+        },
+        {
+            "name": "extra virgin olive oil",
+            "quantity": "1 tbsp"
+        }
+    ]
+}

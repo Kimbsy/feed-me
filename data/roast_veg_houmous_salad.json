@@ -1,0 +1,49 @@
+{
+    "name": "Roast Veg Houmous Salad",
+    "ingredients": [
+        {
+            "name": "parsnips",
+            "quantity": "4"
+        },
+        {
+            "name": "carrots",
+            "quantity": "4"
+        },
+        {
+            "name": "cumin seeds",
+            "quantity": "2 tsp"
+        },
+        {
+            "name": "chickpeas",
+            "quantity": "400g can"
+        },
+        {
+            "name": "vegeable oil",
+            "quantity": "2 tbsp"
+        },
+        {
+            "name": "cooked beetroot",
+            "quantity": "500g pack"
+        },
+        {
+            "name": "clear honey",
+            "quantity": "2 tbsp"
+        },
+        {
+            "name": "houmous",
+            "quantity": "200g pot"
+        },
+        {
+            "name": "white wine vinegar",
+            "quantity": "2 tbsp"
+        },
+        {
+            "name": "mint",
+            "quantity": "small bunch"
+        },
+        {
+            "name": "feta",
+            "quantity": "200g"
+        }
+    ]
+}
