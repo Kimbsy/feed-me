@@ -2,7 +2,8 @@ from loader import Loader
 
 class App:
 
-    """The main application class"""
+    """The main application class.
+    """
 
     def __init__(self):
         print('Initializing...')

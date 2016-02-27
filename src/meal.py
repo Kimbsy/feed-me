@@ -2,13 +2,15 @@ from ingredient import Ingredient
 
 class Meal:
 
+    """The Meal class contains the name of the meal as well as a list of
+    required Ingredients.
+    """
+
     def __init__(self, options):
-        # print('    Initializing meal...')
         self.ingredients = []
         self.hydrate(options)
 
     def hydrate(self, options):
-        # print('    hydrating meal...')
         self.name = options['name']
 
         if 'ingredients' in options.keys():
