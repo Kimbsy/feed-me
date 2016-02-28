@@ -3,11 +3,11 @@
     "ingredients": [
         {
             "name": "sweet potatoes",
-            "quantity": "2"
+            "quantity": "1"
         },
         {
             "name": "onion",
-            "quantity": "1 medium"
+            "quantity": "1 small"
         },
         {
             "name": "kale",
@@ -23,7 +23,7 @@
         },
         {
             "name": "cannellini beans",
-            "quantity": "1/2 cup"
+            "quantity": "1/4 cup"
         },
         {
             "name": "garlic powder",
@@ -32,6 +32,10 @@
         {
             "name": "salt and pepper",
             "quantity": "enough"
+        },
+        {
+            "name": "chicken breast",
+            "quantity": "2"
         }
     ]
 }
