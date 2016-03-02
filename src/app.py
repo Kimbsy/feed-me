@@ -1,5 +1,6 @@
 from loader import Loader
 import random
+import os
 
 class App:
 
@@ -7,11 +8,12 @@ class App:
     """
 
     def __init__(self):
+        os.system('clear')
         print('Initializing...')
         self.loader = Loader()
         self.available_meals = self.loader.load_meals()
-        self.meals = self.available_meals
-        print('Initialization complete\n')
+        self.size = os.popen('stty size', 'r').read().split()
+        print('Initialization complete')
 
         self.days = [
             'Monday',
@@ -28,7 +30,7 @@ class App:
             self.loop()
 
     def loop(self):
-        print('What would you like to do?')
+        print('\nWhat would you like to do?')
         print('1) Load this week\'s meals')
         print('2) Generate new meals')
         print('3) Hold specific meals')
@@ -36,17 +38,21 @@ class App:
         choice = input()
 
         if int(choice) == 1:
-            print('loading')
+            os.system('clear')
+            print('loading current meals...')
             self.meals = []
             self.print_meals()
         elif int(choice) == 2:
-            print('generating')
+            os.system('clear')
+            print('generating meals...\n')
             self.meals = self.get_random_meals([])
             self.print_meals()
         elif int(choice) == 3:
             print('make selections:')
             choices = self.get_choices()
             self.meals = self.get_random_meals(choices)
+            os.system('clear')
+            print('generating meals...\n')
             self.print_meals()
 
 
@@ -69,40 +75,37 @@ class App:
         choices.sort()
 
         # Get list of available meals.
-        available_idxs = list(range(0, len(self.available_meals)))
-        print(available_idxs)
+        available_meals = list(self.available_meals)
+
         # Remove the held choices.
         if choices:
             for c in choices:
-                print(c)
-                available_idxs.remove(c)
-        meal_idxs = available_idxs
+                available_meals.remove(self.meals[c])
 
-        print(meal_idxs)
-
-        for i in range(1, 8):
+        # Loop to fill up meals list.
+        for i in range(0, 7):
+            # If we're at the index of a choice, add in that choice.
             if choices and i in choices:
-                meals.append(self.meals[i - 1])
+                choice = self.meals[i]
+                meals.append(choice)
             else:
-                rand = random.choice(meal_idxs)
-                print(rand)
-                meals.append(self.available_meals[rand])
-                available_idxs.remove(rand)
+                # Otherwise, make a random choice from what's available and
+                # remove it from available.
+                rand = random.choice(available_meals)
+                meals.append(rand)
+                available_meals.remove(rand)
 
-        print(meals)
-
-
-        # for idx in meal_idxs[:7]:
-        #     meals.append(self.available_meals[idx])
+        meals = meals[:7]
 
         return meals
 
     def get_choices(self):
         # Get choices.
         choices = input().split(' ')
-        # Remove blank strings from list.
-        choices = [int(c) for c in choices if c]
+        # Remove blank strings from list and decrement index.
+        choices = [int(c) - 1 for c in choices if c]
 
+        # Validate choices, if invalid, request new choices.
         if not self.valid_choices(choices):
             print('Please enter a list of choices:')
             return self.get_choices()
@@ -113,12 +116,12 @@ class App:
         valid = True
 
         for choice in choices:
-            if choice < 1:
+            if choice < 0:
                 print('choices must be greater than 0')
                 valid = False
                 break
-            if choice - 1 >= len(self.meals):
-                print('choices must be less than ' + str(len(self.meals) + 2))
+            if choice >= len(self.meals):
+                print('choices must be less than ' + str(len(self.meals) + 1))
                 valid = False
                 break
 
