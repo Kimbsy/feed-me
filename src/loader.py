@@ -19,19 +19,15 @@ class Loader:
         meals = []
 
         for filename in self.meal_files:
-            # print('loading meal:')
-            # print('  ' + filename)
             meals.append(self.load(filename))
 
         return meals
 
     def load(self, filename):
         full_path = self.data_dir + filename
-        # print('  File: ' + full_path)
         
         with open(full_path) as f:
             data = json.load(f)
             meal = Meal(data)
-        # print('  Name: ' + meal.name)
 
         return meal

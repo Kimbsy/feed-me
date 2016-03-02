@@ -4,15 +4,16 @@ import os
 
 class App:
 
-    """The main application class.
+    """The main application class takes user input and manages the applicatino loop.
     """
 
     def __init__(self):
         os.system('clear')
         print('Initializing...')
-        self.loader = Loader()
+        self.loader          = Loader()
         self.available_meals = self.loader.load_meals()
-        self.size = os.popen('stty size', 'r').read().split()
+        self.size            = os.popen('stty size', 'r').read().split()
+        self.active          = True
         print('Initialization complete')
 
         self.days = [
@@ -26,7 +27,7 @@ class App:
         ]
 
     def start(self):
-        while True:
+        while self.active:
             self.loop()
 
     def loop(self):
@@ -34,10 +35,12 @@ class App:
         print('1) Load this week\'s meals')
         print('2) Generate new meals')
         print('3) Hold specific meals')
+        print('4) Save current meals')
 
         choice = input()
 
         if int(choice) == 1:
+            # @TODO: load saved meals
             os.system('clear')
             print('loading current meals...')
             self.meals = []
@@ -54,12 +57,15 @@ class App:
             os.system('clear')
             print('generating meals...\n')
             self.print_meals()
+        elif int(choice) == 4:
+            # @TODO: save meals and email shopping list
 
 
     def print_meals(self):
         for i, meal in enumerate(self.meals):
-            day_spaces = self.max_day_len() - len(self.days[i])
+            day_spaces  = self.max_day_len() - len(self.days[i])
             meal_spaces = self.max_meal_len() - len(meal.name)
+
             print(self.days[i] + ': ' + (' ' * day_spaces) + meal.name + (' ' * meal_spaces) + ' (' + str(i + 1) + ')')
 
     def max_day_len(self):
