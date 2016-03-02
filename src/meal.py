@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from ingredient import Ingredient
 
 class Meal:
@@ -18,7 +20,9 @@ class Meal:
                 ingredient = Ingredient(ingredient_data)
                 self.ingredients.append(ingredient)
 
-    def show(self):
-        print(self.name + ':')
+    def show(self, string):
+        string = string + self.name + ':' + '\n'
         for ingredient in self.ingredients:
-            ingredient.show()
+            string = ingredient.show(string)
+
+        return string

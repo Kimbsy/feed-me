@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from meal import Meal
 import os
 import json

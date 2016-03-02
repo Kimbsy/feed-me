@@ -1,4 +1,7 @@
+#!/usr/bin/python
+
 from loader import Loader
+from emailer import Emailer
 import random
 import os
 
@@ -13,7 +16,6 @@ class App:
         print('Initializing...')
         self.loader          = Loader()
         self.available_meals = self.loader.load_meals()
-        self.size            = os.popen('stty size', 'r').read().split()
         self.active          = True
         print('Initialization complete')
 
@@ -37,31 +39,45 @@ class App:
         print('2) Generate new meals')
         print('3) Hold specific meals')
         print('4) Save current meals')
+        if hasattr(self, 'meals'):
+            print('5) Email shopping list for current meals')
 
-        choice = input()
+        choice = input().replace(' ', '')
 
-        if int(choice) == 1:
+        if not choice.isnumeric():
+            os.system('clear')
+            print('please enter a number between 1 and 4')
+            return
+        else:
+            choice = int(choice)
+
+        if choice == 1:
             # @TODO: load saved meals
             os.system('clear')
             print('loading current meals...')
             self.meals = []
             self.print_meals()
-        elif int(choice) == 2:
+        elif choice == 2:
             os.system('clear')
             print('generating meals...\n')
             self.meals = self.get_random_meals([])
             self.print_meals()
-        elif int(choice) == 3:
+        elif choice == 3:
             print('make selections:')
             choices = self.get_choices()
             self.meals = self.get_random_meals(choices)
             os.system('clear')
             print('generating meals...\n')
             self.print_meals()
-        elif int(choice) == 4:
+        elif choice == 4:
             os.system('clear')
             print('saving meals...')
-            # @TODO: save meals and email shopping list
+            # @TODO: save meals
+        elif choice == 5:
+            os.system('clear')
+            print('emailing shopping list...')
+            emailer = Emailer(self.meals)
+            emailer.send_list()
 
     def print_meals(self):
         for i, meal in enumerate(self.meals):
@@ -84,6 +100,7 @@ class App:
         meals = []
 
         # Make sure the choices are in order.
+        choices = list(set(choices))
         choices.sort()
 
         # Get list of available meals.

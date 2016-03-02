@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 class Ingredient:
 
     """The Ingredient class contains the name of an ingredient as well as the
@@ -11,5 +13,6 @@ class Ingredient:
         self.name = options['name']
         self.quantity = options['quantity']
 
-    def show(self):
-        print('  ' + self.quantity + ' ' + self.name)
+    def show(self, string):
+        string = string + '  ' + self.quantity + ' ' + self.name + '\n'
+        return string
