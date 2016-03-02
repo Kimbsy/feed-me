@@ -4,7 +4,8 @@ import os
 
 class App:
 
-    """The main application class takes user input and manages the applicatino loop.
+    """The main application class takes user input and manages the applicatino
+    loop.
     """
 
     def __init__(self):
@@ -58,15 +59,20 @@ class App:
             print('generating meals...\n')
             self.print_meals()
         elif int(choice) == 4:
+            os.system('clear')
+            print('saving meals...')
             # @TODO: save meals and email shopping list
-
 
     def print_meals(self):
         for i, meal in enumerate(self.meals):
             day_spaces  = self.max_day_len() - len(self.days[i])
             meal_spaces = self.max_meal_len() - len(meal.name)
 
-            print(self.days[i] + ': ' + (' ' * day_spaces) + meal.name + (' ' * meal_spaces) + ' (' + str(i + 1) + ')')
+            output = ''
+            output = output + self.days[i] + ': ' + (' ' * day_spaces)
+            output = output + meal.name + (' ' * meal_spaces)
+            output = output + ' (' + str(i + 1) + ')'
+            print(output)
 
     def max_day_len(self):
         return max([len(day) for day in self.days])
