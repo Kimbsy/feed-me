@@ -1,0 +1,33 @@
+{
+    "name": "Spinach and Cream Cheese Stuffed Chicken",
+    "ingredients": [
+        {
+            "name": "chicken breast",
+            "quantity": "2"
+        },
+        {
+            "name": "spinach",
+            "quantity": "1 handful"
+        },
+        {
+            "name": "light cream cheese",
+            "quantity": "half a tub"
+        },
+        {
+            "name": "asparagus tips",
+            "quantity": "1 bunch"
+        },
+        {
+            "name": "bread crumbs",
+            "quantity": "2 handfuls"
+        },
+        {
+            "name": "olive oil",
+            "quantity": "drizzle"
+        },
+        {
+            "name": "lemon juice",
+            "quantity": "1/2"
+        }
+    ]
+}

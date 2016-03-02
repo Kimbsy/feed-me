@@ -1,0 +1,29 @@
+{
+    "name": "Pan Fried Sea Bass with Cous Cous",
+    "ingredients": [
+        {
+            "name": "sea bass",
+            "quantity": "2 fillets"
+        },
+        {
+            "name": "cous cous",
+            "quantity": "70g"
+        },
+        {
+            "name": "spring onions",
+            "quantity": "half a bunch"
+        },
+        {
+            "name": "red pepper",
+            "quantity": "1"
+        },
+        {
+            "name": "green olives",
+            "quantity": "a dozen"
+        },
+        {
+            "name": "chorizo",
+            "quantity": "half"
+        }
+    ]
+}

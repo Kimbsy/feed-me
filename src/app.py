@@ -86,7 +86,7 @@ class App:
 
             output = ''
             output = output + self.days[i] + ': ' + (' ' * day_spaces)
-            output = output + meal.name + (' ' * meal_spaces)
+            output = output + meal.name + ' ' + ('.' * (meal_spaces + 2))
             output = output + ' (' + str(i + 1) + ')'
             print(output)
 
