@@ -5,7 +5,7 @@ Displays a list of meals for the week, gives opportunity to select choices and e
 
 To install:
 ```bash
-sudo ./install.sh
+sudo ./install.sh <path_to_bash_config_file>
 ```
 
 @TODO: add cooking times
